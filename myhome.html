@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <style>
+*{
+box-sizing: border-box;
+}
+
+body {
+  font-family: 'Great Vibes', cursive;
+    padding: 5px;
+  background-color:#7B68EE;
+}
+/* For header titlt*/
+.header{
+padding:30px;
+text-align:center;
+background:#F5DEB3;
+
+}
+
+.header h1
+{
+font-display:fallback:20px;
+}
+
+/*top navigation bar*/
+.topnav {
+    overflow: hidden;
+    background-color:orange;
+}
+
+
+.topnav a{
+float: left;
+display:flex;
+color:red;
+text-align: center;
+padding: 1px 15px;
+text-transform: capitalize;
+}
+
+/*change colour on hover*/
+
+.topnav a:hover{
+background-color:lightblue;
+color:white;
+}
+
+/*coloumn floats*/
+
+.leftcolumn{
+float: left;
+width: 75%;
+}
+.rightcolumn{
+float: right;
+width: 25%;
+background-color:#FF4500;
+padding: 2px;
+}
+.img{
+  background-color:#ADD8E6;
+  width: 100%;
+  padding: 20px;
+}
+/* card effect*/
+img {
+    border-radius: 50%;
+}
+.card{
+background-color:white;
+padding:15px;
+margin-top:2px;
+}
+.row:after{
+
+content:"DESIGNED - ";
+display: table;
+clear: both;
+}
+
+.footer {
+    padding: 5px;
+    text-align: center;
+    background: lightgreen;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+ @media screen and (max-width: 400px) {
+     .topnav a {
+         float: none;
+         width: 100%;
+     }
+ }
+
+/* img rotation*/
+#loading {
+		-webkit-animation: spin 10s infinite linear;
+}
+
+
+  @-webkit-keyframes spin{
+   from{
+   -webkit-transform: rotateX(0deg);
+ -webkit-transform: rotateY(360deg);}
+   to{
+   -webkit-transform: rotateX(360deg);
+ -webkit-transform: rotateY(0deg);}
+  }
+
+ </style>
+ </head>
+ <body>
+
+ <div class="header">
+    <h1> LOYOLA - ICAM COLLEGE OF ENGINEERING AND TECHNOLOGY <br> <font color="	#FF0000">INFORMATION TECHNOLOGY </font></h1>
+  <p> <img src="licet_logo.png" alt="logo" width="140" height="140" align="topleft"> </p>
+</div>
+
+
+<div class="topnav">
+ <a href="http://www.licet.ac.in/Academic/IT.php">Academics</a>
+ <a href="#">Description</a>
+  <a href="#">Staff</a>
+ <a href="#" style="float:right"> Sports </a>
+ <a href="#">Achievements</a>
+
+</div>
+
+ <div class="row">
+   <div class="leftcolumn">
+     <div class="card">
+       <h2>Information Technology</h2> <br>
+       <h3> <font color="red">About the department </font></h3>
+       <div class="img" style="height:500px;"> <img id="loading" src="it.jpg" alt="logo" width="140" height="140" margin-left: 20px;> <br>The field of information technology covers the design, administration and support of computer and telecommunications systems. The IT Department had its inception in the year 2010 with the UG programme, having 60 as the sanctioned intake of students. The department holds energetic and dynamic faculty who constantly update their knowledge and skills through various quality improvement programs. The department transforms the students into young professional equipped with valuable skills for their career development. This programme is an integration of classroom and laboratory learning .This course aids in acquiring practical knowledge; striking a balance between the basics of engineering science and the applications in the real circumstances.
+
+Every possible state – of –the –art facilities and design tools are given to the students to carry out their projects. Intensive laboratory assignments are given in order to gain significant experience. The Department emphasizes on Domain Specific Applications such as – Networks, Information Security, Software Engineering, Operating Systems, Database Management Systems, Image Processing, Cloud Computing, Mobile Applications, Network Security Tools etc. to facilitate acquiring higher degree of knowledge, global competency and excellence, for the betterment of the society. <br>  </div>
+
+     </div>
+/* deleted content from original template*/
+
+   </div>
+
+        <div class="rightcolumn">
+      <div class="card">
+        <h2>About Us </h2>
+          <a  href="https://en.wikipedia.org/wiki/Ajith_Kumar"><img src="thala.jpg" alt="logo" width="140" height="140" align="topleft"> </a>
+        <div class="img" style="height:400;"><br> <font color="	red"> Vision </font><br>
+To build proficient Information Technologists through moral, ethical and technological standards for the societal well-being.</div>
+      <br> <br><font color="red" > Mission</font> <br>   <div class="img">
+•	To provide a practice oriented methodology with access to contemporary knowledge in IT for the betterment of the society. <br>
+
+•	To prepare students for competent careers in information technology through innovation, team spirit, ethics and entrepreneurial skills in evolving technologies. <br>
+
+•	To integrate our department with quality organizations worldwide and promote industry institute interaction for symbiotic benefits.
+  </div></div>
+
+      <div class="card">
+      <h3>Find us here</h3>
+      <div class="img"><p>hi hello</p></div>
+      <div class="img"><p>Image</p></div>
+      <div class="img"><p>Image</p></div>
+    </div>
+    <div class="card">
+      <h3>Find us here : </h3>
+      <p>Loyola-ICAM College of Engineering and Technology (LICET)<br>
+Loyola Campus<br>
+Nungambakkam,<br>
+Chennai - 600034.<br>
+Tamil Nadu, India.</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+<p> <font face="EB Garamond" size="5px" color="red";> with ❤️ by Kamesh,Louji,Joshua for Department of Inofrmation Technology </font></p>
+</div>
+
+</body>
+</html>
