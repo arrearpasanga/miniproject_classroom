@@ -17,8 +17,8 @@
 			</div>
 			<div class="navbar">
 		<a  href="redefined.html"><i class="fa fa-fw fa-home"></i> Home</a>
-		<a  href="lawyersdept.html"><i class="fa fa-fw fa-user"></i> Staff</a>
-		<a href="#"><i class="fa fa-fw fa-wechat"></i> Student Login</a>
+		<a  href="staffdept.html"><i class="fa fa-fw fa-user"></i> Staff</a>
+		<a href="login.html"><i class="fa fa-fw fa-wechat"></i> Student Login</a>
 		<a href="aboutdept.html"><i class="fa fa-fw fa-leanpub"></i>About</a>
 		 <a class="active" href="contactdept.html"><i class="fa fa-fw fa-lastfm-square"></i>Contact</a>
 	</div>
@@ -62,21 +62,36 @@
 				<p>
 					Don't hesitate to showcast your ideas, thoughts, feedbacks, suggestions regarding the improvement of the department <br> Thanks for your support
 				</p>
-				<form action="redefined.html" method="post" class="message">
-					<label>Name</label>
-					<input type="text" value="">
-
-					<label>Year</label>
-					<input type="text" value="">
-
-					<label>Register Number</label>
-					<input type="text" value="">
-					<label>Email Address</label>
-					<input type="text" value="">
-					<label>Message</label>
-					<textarea></textarea>
-					<input type="submit" value="Send Message">
-				</form>
+				<div class="contact">
+        <h3>Email Us</h3>
+        <div class="alert">Your message has been sent</div>
+        <form id="contactForm">
+					 
+          <p>
+            <label>Name</label>
+            <input type="text" name="name" id="name" required>
+          </p>
+          <p>
+            <label>Company</label>
+            <input type="text" name="company" id="company">
+          </p>
+          <p>
+            <label>Email Address</label>
+            <input type="email" name="email" id="email" required>
+          </p>
+          <p>
+            <label>Phone Number</label>
+            <input type="text" name="phone" id="phone">
+          </p>
+          <p class="full">
+            <label>Message</label>
+            <textarea name="message" rows="5" id="message"></textarea>
+          </p>
+          <p class="full">
+            <button type="submit">Submit</button>
+          </p>
+        </form>
+      </div>
 				 <br> Help us improve.
 			</div>
 		</div>
@@ -119,5 +134,7 @@
 			</div>
 		</div>
 	</div>
+	<script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
